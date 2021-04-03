@@ -1,5 +1,7 @@
 # playok-converter
 
+The purpose of this project is to convert thai chess record from english to thai
+
 ## Project setup
 ```
 npm install

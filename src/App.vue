@@ -1,14 +1,14 @@
 <template>
-  <HelloWorld/>
+  <Main/>
 </template>
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-import HelloWorld from './components/HelloWorld.vue';
+import Main from './components/Main.vue';
 
 @Options({
   components: {
-    HelloWorld,
+    Main,
   },
 })
 export default class App extends Vue {}
