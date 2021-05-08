@@ -1,6 +1,6 @@
 <template>
 	<div class="container">
-		<img class="logo" src="../assets/logo.png" />
+		<div class="header">แปลงบันทึกหมาก PlayOK</div>
 		<div class="main-section">
 			<div class="input-group">
 				<input
@@ -9,7 +9,9 @@
 					type="text"
 					placeholder="e.g.https://www.playok.com/p/?g=mk63281508"
 					v-on:change="requestPlayOK"
+					ref="input"
 				/>
+				<div class="alert hidden" ref="alert-message"></div>
 			</div>
 			<div class="original" v-html="originalText"></div>
 			<div class="final" v-html="finalText"></div>
@@ -19,4 +21,4 @@
 
 
 <script src="./Main.ts"></script>
-<style src="./Main.css" scoped></style>
+<style src="./Main.css"></style>
